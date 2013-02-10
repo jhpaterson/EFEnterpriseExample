@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="EnterpriseExample.HR.Domain.Classes.Address">
+    <Position X="1.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Classes\Address.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="PostCode" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="EnterpriseExample.HR.Domain.Classes.Employee">
+    <Position X="3.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAgCAAAQAAQAQAEAAAAAACAAAQAAACAEA=</HashCode>
+      <FileName>Classes\Employee.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Address" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="EnterpriseExample.HR.Domain.Classes.PostCode">
+    <Position X="1.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Classes\PostCode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnterpriseExample.HR.Domain.Classes.Department">
+    <Position X="6.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAQACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Department.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Employees" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,24 @@
+﻿@model System.Web.Mvc.SelectList
+
+@{
+    ViewBag.Title = "Payroll";
+}
+
+<h2>Payroll</h2>
+
+@using (Html.BeginForm("Process","Payroll")) {
+
+<br />
+<div class="editor-label">
+    @Html.Label("Choose department to process")
+</div>
+    
+<div class="editor-field">
+    @Html.DropDownList("id", Model)
+</div>
+
+<p>
+<input type="submit" value="Process" />
+</p>
+  
+}

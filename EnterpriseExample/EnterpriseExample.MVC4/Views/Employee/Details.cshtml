@@ -1,0 +1,73 @@
+﻿@model EnterpriseExample.HR.Domain.Classes.Employee
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Employee</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Username)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Username)
+    </div>
+
+      <div class="display-label">
+         @Html.DisplayNameFor(model => model.Grade)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Grade)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Biography)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Biography)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.PhoneNumber)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.PhoneNumber)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Email)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Email)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Address.PropertyNumber)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Address.PropertyNumber)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Address.PostCode.FullCode)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Address.PostCode.FullCode)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.EmployeeId }) |
+    @Html.ActionLink("Edit Address", "EditAddress", new { id=Model.EmployeeId }) |
+    @Html.ActionLink("Back to List", "Index") |
+    @Html.ActionLink("Colleagues", "ByDepartment", new { id=Model.DepartmentId })
+</p>
