@@ -1,7 +1,4 @@
-﻿using System;
-
-
-namespace EnterpriseExample.HR.Domain.Classes
+﻿namespace EnterpriseExample.HR.Domain.Classes
 {
     public class Address 
     {

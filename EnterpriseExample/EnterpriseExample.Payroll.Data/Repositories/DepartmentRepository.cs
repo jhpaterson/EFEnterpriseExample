@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Linq;
 using System.Data;
 using System.Data.Entity;
 using EnterpriseExample.Payroll.Domain.Classes;
 using EnterpriseExample.Payroll.Domain.Interfaces;
-using EnterpriseExample.Payroll.Data.Context;
 using EnterpriseExample.BaseDataLayer.Repositories;
 
 namespace EnterpriseExample.Payroll.Data.Repositories

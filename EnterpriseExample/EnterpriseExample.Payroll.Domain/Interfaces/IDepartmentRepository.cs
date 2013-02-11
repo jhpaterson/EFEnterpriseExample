@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using EnterpriseExample.Interfaces;
+﻿using EnterpriseExample.Interfaces;
 using EnterpriseExample.Payroll.Domain.Classes;
 
 namespace EnterpriseExample.Payroll.Domain.Interfaces

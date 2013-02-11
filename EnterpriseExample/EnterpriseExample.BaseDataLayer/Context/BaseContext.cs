@@ -3,16 +3,14 @@ using EnterpriseExample.Interfaces;
 
 namespace EnterpriseExample.BaseDataLayer.Context
 {
-    public class BaseContext<TContext>
-    : DbContext where TContext : DbContext
+    public class BaseContext<T>
+    : DbContext where T : DbContext
     {
         public BaseContext()
             : base("name=CompanyContext")
         {
-            Database.SetInitializer<TContext>(null);
+            Database.SetInitializer<T>(null);   // prevents contexts trying to initialise unless explicitly configured to do so
         }
 
-        // should make this protected and change TContext to T, remove initialiser 
-        // line unless really needed - based on Lerman's Enterprise course code
     }
 }
