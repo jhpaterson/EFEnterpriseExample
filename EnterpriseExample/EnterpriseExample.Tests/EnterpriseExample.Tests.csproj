@@ -35,7 +35,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Moq">
+      <HintPath>..\packages\Moq.4.0.10827\lib\NET40\Moq.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.20710.0\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <Choose>
     <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
@@ -52,11 +59,16 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UnitTests\HR.Domain\Queries\EmployeeQueriesTest.cs" />
+    <Compile Include="UnitTests\MVC4.Controllers\EmployeeControllerTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\EnterpriseExample.BaseDataLayer\EnterpriseExample.BaseDataLayer.csproj">
       <Project>{e88acf8d-a1b9-488e-91e5-d404a2940cda}</Project>
       <Name>EnterpriseExample.BaseDataLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EnterpriseExample.Fakes.Data\EnterpriseExample.HR.Fakes.Data.csproj">
+      <Project>{336b5532-ad78-40fe-be9a-f0471a03655f}</Project>
+      <Name>EnterpriseExample.HR.Fakes.Data</Name>
     </ProjectReference>
     <ProjectReference Include="..\EnterpriseExample.HR.Data\EnterpriseExample.HR.Data.csproj">
       <Project>{478981bc-ecd1-437e-815e-fa6db013b8f7}</Project>
@@ -70,6 +82,10 @@
       <Project>{5c4c82ef-0d98-45f2-8c8e-d31c39f4e9d6}</Project>
       <Name>EnterpriseExample.Interfaces</Name>
     </ProjectReference>
+    <ProjectReference Include="..\EnterpriseExample.MVC4\EnterpriseExample.MVC4.csproj">
+      <Project>{a1da9e18-b5a7-4150-93d6-50c80aeb1dd8}</Project>
+      <Name>EnterpriseExample.MVC4</Name>
+    </ProjectReference>
     <ProjectReference Include="..\EnterpriseExample.Payroll.Data\EnterpriseExample.Payroll.Data.csproj">
       <Project>{0f22a30d-28ed-4bbf-a394-903b67de4be0}</Project>
       <Name>EnterpriseExample.Payroll.Data</Name>
@@ -78,6 +94,9 @@
       <Project>{8ef1daed-dd3b-4158-9072-9078d7855238}</Project>
       <Name>EnterpriseExample.Payroll.Domain</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

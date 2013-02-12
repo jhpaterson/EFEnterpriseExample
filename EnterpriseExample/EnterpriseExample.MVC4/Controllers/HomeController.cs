@@ -15,20 +15,9 @@ namespace EnterpriseExample.MVC4.Controllers
 {
     public class HomeController : Controller
     {
-        //private IEmployeeRepository _repository = new EmployeeRepository(new HRContext());
-        //private IEmployeeRepository _repository;
-
-        //public HomeController(IHRUnitOfWork uow)
-        //{
-        //    _repository = new EmployeeRepository(uow);
-        //}
 
         public ActionResult Index()
         {
-            //var result = _repository.GetAll().ToList();
-            //var result = _repository.FindBy(e => e.Address.PostCode.Area == "G10")
-            //    .ToList();
-
             return View();
         }
 
